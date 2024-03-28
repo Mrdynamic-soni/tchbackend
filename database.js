@@ -10,7 +10,7 @@ const client = new Pool({
 });
 
 export const excuteQuery = async (sqlQuery) => {
-    const response = client.query(sqlQuery)
+    const response =  client.query(sqlQuery)
     if (response)
         return response;
     return " Error"
